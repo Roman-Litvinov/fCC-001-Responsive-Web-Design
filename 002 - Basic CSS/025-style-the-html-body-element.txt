@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<style>
+
+body {
+    background-color: black;
+  }
+
+</style>
+<body>
+<!-- add some text, so we can see that stuff is working
+    and that the background is black -->
+  <h1 style="color: white;">Some stuff</h1>
+</body>

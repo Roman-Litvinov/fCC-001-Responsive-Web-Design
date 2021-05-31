@@ -1,0 +1,17 @@
+<style>
+  :root {
+    --red-color: red;
+  }
+    /* IE doesn't support variables used in CSS, therefore
+    the background setting using the variable --red-color 
+    is not going to work in IE. So I add a fallback declaration
+    right before - IE will use that, and proper browsers that support
+    CSS variables will use the next line with the variable:*/
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>

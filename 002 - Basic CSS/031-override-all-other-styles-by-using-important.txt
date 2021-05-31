@@ -1,0 +1,23 @@
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    /* adding the keyword "!important" to the color declaration
+    makes sure that this style will NOT be overriden by any other declarations
+    that normally would take precedence (like subsequent classes declarations,
+    or ID style declarations, or even inline styles): */
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<!-- below text is PINK according to the ".pink-text" CSS class - which
+    normally would've been overridden by other stuff: -->
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>

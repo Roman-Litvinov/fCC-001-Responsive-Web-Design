@@ -1,0 +1,21 @@
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  /* CSS styling applied by ID attributes takes precedence (overrides) CSS styling
+     that's applied by classes, - regardless of the order of declaration of the styles:*/
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  
+</style>
+<!-- below, style applied by ID overrides styles applied by CSS classes: -->
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>

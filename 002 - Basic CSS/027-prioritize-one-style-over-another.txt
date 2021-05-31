@@ -1,0 +1,13 @@
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+</style>
+<!-- as we can see, specified class overrides the CSS styles
+ inherited from the parent element - the text is pink, not green. -->
+<h1 class='pink-text'>Hello World!</h1>

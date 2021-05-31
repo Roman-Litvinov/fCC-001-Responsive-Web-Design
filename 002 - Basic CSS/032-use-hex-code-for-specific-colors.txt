@@ -1,0 +1,6 @@
+<style>
+/* set background color to black but in HEX */
+  body {
+    background-color: #000000;
+  }
+</style>

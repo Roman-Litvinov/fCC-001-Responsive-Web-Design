@@ -1,0 +1,7 @@
+<style>
+  body {
+    /* Replacing the abbreviated hex code for red with RGB code for black: */
+    /* background-color: #F00; */
+    background-color: rgb(0,0,0)
+  }
+</style>

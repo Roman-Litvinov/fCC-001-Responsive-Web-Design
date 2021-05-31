@@ -1,0 +1,19 @@
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  /* MULTIPLE CLASSES APPLIED TO THE SINGLE ELEMENTS 
+    The class that is declared later overrides the class that is declared earlier,
+    when both are applied to the same element.
+    NOTE: the order in which the classes are listed when they are APPLIED doesn't
+    matter - only the order in which they are CREATED. */
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
