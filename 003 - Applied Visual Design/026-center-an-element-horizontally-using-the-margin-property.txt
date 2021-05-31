@@ -1,0 +1,14 @@
+<style>
+  div {
+    color: white;
+    text-align: center;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    /* set the MARGIN property to AUTO - this should 
+    center the element on the page: */
+    margin: auto;
+  }
+</style>
+
+<div>TEST</div>

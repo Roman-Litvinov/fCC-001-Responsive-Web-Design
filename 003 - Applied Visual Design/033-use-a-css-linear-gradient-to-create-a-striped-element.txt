@@ -1,0 +1,34 @@
+<style>
+
+  div{
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: auto;
+ }
+div#first {
+  background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+}
+div#second {
+  background: repeating-linear-gradient(
+      45deg,
+      yellow 0%,
+      blue 25%,
+      green 50%,
+      red 75%,
+      yellow 100%
+    );
+}
+</style>
+
+<div id="first">FIRST</div>
+<div id="second">SECOND</div>

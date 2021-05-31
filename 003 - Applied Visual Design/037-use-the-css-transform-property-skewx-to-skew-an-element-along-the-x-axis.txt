@@ -1,0 +1,22 @@
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    /* when margin property is given 2 values, 1st is vertical margin
+    and 2nd is horizontal margin. So this margin is set to 50px vertical
+    and auto horizontal margin (which would center it in the parent 
+    element that contains it:) */
+    margin:  50px auto;
+  }
+  #top {
+    background-color: red;
+  }
+  #bottom {
+    background-color: blue;
+    /* skew the element with ID "bottom" 24 degrees along the X axis (horizontal): */
+    transform: skewX(24deg);
+  }
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>

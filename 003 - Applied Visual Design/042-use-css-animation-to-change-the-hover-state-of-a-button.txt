@@ -1,0 +1,42 @@
+<style>
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    /* make sure the 1st keyframe state and last keyframe state are shown
+    before the animation starts and after the animation ends */
+    animation-fill-mode: both;
+  }
+
+  @keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+  }
+
+  /* EXAMPLE - setting up animation on mouse-over on the image
+      NOTE - doesn't seem to work with the image!
+  /* set up a :hover pseudo-class: */
+  img:hover {
+    animation-name: wider;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+  }
+  @keyframes wider {
+    100% {
+      width: 40px;
+    }
+  }
+</style>
+
+<button>Register</button>
+<!-- test example part - animation on mouse-over on the image 
+    NOTE: doesn't seem to work!!! -->
+<p>Test image:</p>
+<img src="https://bit.ly/smallgooglelogo" alt="Google's Logo">

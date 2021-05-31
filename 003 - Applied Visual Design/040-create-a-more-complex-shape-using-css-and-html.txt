@@ -1,0 +1,53 @@
+<style>
+  /* define the main heart element properties: */
+  .heart {
+    position: absolute;
+    /* center it vertically and horizontally: */
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* make it pink: */
+    background-color: pink;
+    /* set its size: */
+    height: 50px;
+    width: 50px;
+    /* rotate the whole thing 45 CCW: */
+    transform: rotate(-45deg);
+  }
+  
+  /* define the right round bump attachment to the heart,
+  by adding the ::AFTER pseudo-element to .heart class: */
+  .heart::after {
+    /* make it pink: */
+    background-color: pink;
+    /* MUST define CONTENT property - otherwise the pseudo-element won't show,
+    so we just set it to empty string: */ 
+    content: "";
+    /* make it a circle: */
+    border-radius: 50%;
+    position: absolute;
+    /* same size as the main heart element: */
+    width: 50px;
+    height: 50px;
+    /* offset 25px to the right - that's BEFORE the whole thing is rotated! */
+    top: 0px;
+    left: 25px;
+  }
+  
+  /* define the left round bump attachment to the heart,
+  by adding the ::BEFORE pseudo-element to .heart class: */
+  .heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* offset 25px upwards - that's BEFORE the whole thing is rotated! */
+    top: -25px;
+    left: 0px;
+  }
+</style>
+<div class="heart"></div>

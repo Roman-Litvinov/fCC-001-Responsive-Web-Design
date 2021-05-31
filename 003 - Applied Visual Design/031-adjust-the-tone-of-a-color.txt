@@ -1,0 +1,56 @@
+<style>
+  header {
+    /* this background color is shown in the children elements, unless
+    otherwise specified: */
+    background-color: hsl(180, 90%, 35%);
+    /* this text color will be inherited by the child elements within HEADER: */
+    color: #ffffff;
+  }
+
+  nav {
+    /* giving the "nav" element its own background color - otherwise
+    it will have the cyan background color from its parent, the
+    "header" element (see above): */
+    background-color: hsl(180, 80%, 25%);
+
+  }
+
+  h1 {
+    text-indent: 10px;
+    padding-top: 10px;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+
+  nav li {
+    /* display list items INLINE, without line breaks - so we can get
+    a neat navigation bar of links instead of a usual list: */
+    display: inline;
+    /* give some space on the right side before the next item: */
+    margin-right: 20px;
+  }
+
+  a {
+    /* make it so there is no underline for any links in the document: */
+    text-decoration: none;
+    /* inherit the text color from the parent element - specified in style
+    definition for the HEADER element (see above): */
+    color: inherit;
+  }
+</style>
+
+<header>
+  <h1>Cooking with FCC!</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Classes</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#">This is a sample link inside the header. It inherits the text color </a>
+</header>
+<a href="#">This is a sample link NOT inside the header. It does NOT inherit the text color of the HEADER element.</a>

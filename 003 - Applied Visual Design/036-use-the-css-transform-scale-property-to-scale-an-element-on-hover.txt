@@ -1,0 +1,33 @@
+<style>
+  p:hover {
+    /* Make the paragraphcs scale up on mouse hover: */
+    transform: scale(1.15);
+  }
+  
+  div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+    /* let's make the element look nicer...*/
+    padding: 15px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #ffcc00;
+    box-shadow: 6px 6px 6px #666666;
+    text-shadow: 1px 1px 2px #666666;
+  }
+  div:hover {
+    /* scale up the DIV 1.1 times on mouse hover:*/
+    transform: scale(1.1);
+  }
+
+
+</style>
+<p>This is a sample paragraph which should go up in scale on mouse hover...</p>
+<div>THIS IS A &lt;DIV&gt; ELEMENT</div>

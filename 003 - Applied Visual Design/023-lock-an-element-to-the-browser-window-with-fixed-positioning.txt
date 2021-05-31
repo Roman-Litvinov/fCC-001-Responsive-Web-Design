@@ -1,0 +1,52 @@
+<style>
+  body {
+    /* making sure we always have the vertical scrollbars for this challenge,
+    by setting the minimum height of the BODY element to 150% of the vertical
+    viewpoint size: */
+    min-height: 150vh;
+  }
+  #navbar {
+    /* navigation bar is fixed relative to the browser window: */
+    position: fixed;
+    /* it is placed right at the top edge of the window: */
+    top: 0px;
+    /* ...and at the left edge of the window: */
+    left: 0px;
+    /*...taking up 100% of the window's width: */
+    width: 100%;
+    /*...with some crappy gray background color: */
+    background-color: #767676;
+  }
+  nav ul {
+    /* the 2 links in the navigation bar are set up as the unordered list,
+    with no margins around it: */
+    margin: 0px;
+    /*...but with some padding for its list items - so there's space between
+    the links and the edges of the navigation bar: */
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    /* make the navigation bar links (list items) show up as inline elements,
+    on the same line, with no line breaks before/after them, - instead of 
+    the usual way list items are shown: */
+    display: inline;
+    /* set the right margin of the links to 20px, to put more space between them: */
+    margin-right: 20px;
+  }
+  a {
+    /* turn off the underline for the links: */
+    text-decoration: none;
+  }
+</style>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p>I shift up when the #navbar is fixed to the browser window.</p>
+</body>

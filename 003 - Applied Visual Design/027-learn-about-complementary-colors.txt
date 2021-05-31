@@ -1,0 +1,23 @@
+<style>
+  body {
+    background-color: #FFFFFF;
+  }
+  .blue {
+    /* set the background color to blue: */
+    background-color: #0000ff;
+  }
+  .yellow {
+    /* set the background color to yellow: */
+    background-color: #ffff00;
+/*  position: relative;
+    left: 150px;
+    top: 150px; */
+  }
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+</style>
+<div class="blue"></div>
+<div class="yellow"></div>

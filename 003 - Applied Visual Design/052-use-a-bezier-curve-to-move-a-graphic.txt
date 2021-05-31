@@ -1,0 +1,42 @@
+<style>
+  .balls{
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #red {
+    background: red;
+    left: 27%;
+    /* the change in the animated element progresses faster than the time
+     of the animation for that segment - so the element moves FAST at the 
+     beginning, and then SLOWS DOWN towards the end - which is EASE-OUT */
+    /* animation-timing-function: ease-out; */
+    animation-timing-function: cubic-bezier(0,0,0.58,1);
+  }
+  #blue {
+    background: blue;
+    left: 56%;
+    animation-timing-function: ease-out;
+  }
+  @keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: 249px;
+    }
+  }
+  /* WHOAH! "Hello World!" in CSS!!!! */
+  .print::after {
+    content: "Hello World!";
+  }
+</style>
+<div class="balls" id= "red"></div>
+<div class="balls" id= "blue"></div>
+<!-- Hello, World! :) -->
+<div class="print"></div>

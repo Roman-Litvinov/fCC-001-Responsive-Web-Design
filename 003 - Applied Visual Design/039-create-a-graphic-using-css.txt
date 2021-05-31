@@ -1,0 +1,21 @@
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    /* make the element invisible - so we can only see its shadow: */
+    background-color: transparent;
+    /* make the element a circle: */
+    border-radius: 50%;
+    /* make the shadow sharp-edged and blue (leave offset-x and offset-y, remove
+    blur-radius and spread-radius, change color to blue: */
+    box-shadow: 25px 10px 0px 0px blue;
+  }
+
+</style>
+<div class="center"></div>

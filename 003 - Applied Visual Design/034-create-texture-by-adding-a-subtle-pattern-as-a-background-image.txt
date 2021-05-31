@@ -1,0 +1,9 @@
+<style>
+  body {
+    /* set background of the whole HTML page by using BODY element selector
+    to a texture contained in a graphic file, - using the url() function.
+    The URL to the graphics file should be put in quotes inside the parenthesis.
+    */
+    background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+  }
+</style>

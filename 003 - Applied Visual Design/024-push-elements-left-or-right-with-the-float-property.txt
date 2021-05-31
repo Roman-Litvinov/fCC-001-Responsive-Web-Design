@@ -1,0 +1,35 @@
+<head>
+  <style>
+    #left {
+      /* float it left and give it 50% of horizontal space: */
+      float: left;
+      width: 50%;
+    }
+    #right {
+      /* float it right and give it 40% of horizontal space.
+      NOTE: if we give it 50%, it will not fit on the same line
+      as the left-floated element with also 50% (see above ID selector) -
+      - because both have 2px padding (see below) on top of that 50%,
+      thus making the total h.space requirement 50%+50%+2px*4. */
+      float: right;
+      width: 40%;
+    }
+    aside, section {
+      padding: 2px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+  <section id="left">
+    <h2>Content</h2>
+    <p>Good stuff</p>
+  </section>
+  <aside id="right">
+    <h2>Sidebar</h2>
+    <p>Links</p>
+  </aside>
+</body>

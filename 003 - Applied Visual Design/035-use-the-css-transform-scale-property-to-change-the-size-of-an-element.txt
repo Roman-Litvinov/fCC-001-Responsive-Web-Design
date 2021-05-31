@@ -1,0 +1,31 @@
+<style>
+  .ball {
+    /* define the properties common to all elements of BALL class: */
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: fixed;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    /* NOTE: when border-radius is set to 50%, we turn the element
+    into a perfect square, like so:*/
+    border-radius: 50%;
+  }
+  #ball1 {
+    left: 20%;
+  }
+  #ball2 {
+    /* make this ball 1.5 times its original size (as defined in .BALL class selector):
+    IMPORTANT NOTE: there should be NO SPACES between the word "scale" and parentheses (),
+    otherwise the scale() function won't work!  */
+    left: 65%;
+    transform: scale(1.5);
+  }
+
+</style>
+
+<div class="ball" id= "ball1"></div>
+<div class="ball" id= "ball2"></div>

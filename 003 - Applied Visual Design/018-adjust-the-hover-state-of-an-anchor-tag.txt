@@ -1,0 +1,15 @@
+<style>
+  a {
+    color: #000;
+  }
+  /* setting a HOVER state using the ":hover" PSEUDO-CLASS SELECTOR,
+    changing the color to blue. Pseudo-classes are added to selectors
+    to select a specific state of the element, like a mouse-over (or "hover"): */
+  a:hover {
+    color: blue;
+  }
+
+
+
+</style>
+<a href="https://freecatphotoapp.com/" target="_blank">CatPhotoApp</a>

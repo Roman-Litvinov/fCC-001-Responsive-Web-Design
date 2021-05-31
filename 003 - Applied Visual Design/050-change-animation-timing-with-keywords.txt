@@ -1,0 +1,53 @@
+<style>
+/* properties common to all balls */
+  .balls {
+    /* make them a ball */
+    border-radius: 50%; 
+    /* fill them with a gradient */
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    /* position and size */
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    /* animation properties */
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+/* specific ball classes */
+  #ball1 {
+    /* position */
+    left:27%;
+    /* animation timing specifics */
+    /* make it move with constant speed throughout the animation */
+    animation-timing-function: linear;
+  }
+
+  #ball2 {
+    /* position */
+    left:56%;
+    /* animation timing specifics */
+    /* make it ease OUT - start fast and then slow down towards the end */
+    animation-timing-function: ease-out;
+
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+    }
+  }
+
+</style>
+
+<div class="balls" id="ball1"></div>
+<div class="balls" id="ball2"></div>

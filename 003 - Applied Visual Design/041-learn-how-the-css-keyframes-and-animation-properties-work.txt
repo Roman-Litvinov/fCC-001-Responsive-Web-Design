@@ -1,0 +1,68 @@
+<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
+  
+  /* EXAMPLE ANIMATION
+  ====================================================================== */
+  /* set up animation properties for the element with ID of "anim": */
+  #anim {
+    /* name of the animation to be used on this element: */
+    animation-name: colorful;
+    /* duration of the animation
+    (if not set, it defaults to 0 and no animation happens): */
+    animation-duration: 5s;
+    /* how many times to repeat the animation
+    (keep looping if set to "infinite"): */
+    animation-iteration-count: infinite;
+  }
+
+  /* set up the keyframes for the specific animation named "colorful",
+     done by specifying CSS properties for the keyframes, CSS then
+     transitions between them during the animation */
+  @keyframes colorful {
+    /* starting frame - at 0% of the total duration: */
+    0% {
+      background-color: cyan;
+      color: black;
+    }
+    50% {
+      background-color: green;
+      color: white;
+    }
+    75% {
+      background-color: purple;
+      color: yellow;
+    }
+    100% {
+    /* ending frame - at 100% of the total duration. If looping,
+    animation goes back to 0% after this: */
+      background-color: cyan;
+      color: black;
+    }
+  }
+
+
+</style>
+<div id="rect"></div>
+<div id="anim">ANIM element</div>

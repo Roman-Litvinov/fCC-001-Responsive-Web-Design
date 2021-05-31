@@ -1,0 +1,40 @@
+<style>
+  div {
+    /* set up the general DIV properties: */
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #rect {
+    /* set up the animation properties for the #rect element: */
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+ 
+  /* set up keyframes specifics: */
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      /* We achieve motion by changing position (using offset properties) at different
+      keyframes, and CSS transitions between them as animation goes forward: */
+      top: 0px;
+      left: 0px;
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+      left: 25px;
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+      left: -25px;
+    }
+  }
+</style>
+
+<div id="rect"></div>

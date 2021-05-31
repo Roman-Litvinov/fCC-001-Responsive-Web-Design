@@ -1,0 +1,21 @@
+<style>
+/* When POSITITON CSS property is set to "relative", it allows us to 
+position the element RELATIVE to its current position in the normal
+flow of the document. We use the following OFFSET PROPERTIES to set how much
+the item is moved in the direction AWAY FROM where it's normally positioned:
+LEFT - moves RIGHT (AWAY FROM left)
+RIGHT - moves LEFT (AWAY FROM right)
+TOP - moves DOWN (AWAY FROM top)
+BOTTOM - moves UP (AWAY FROM bottom) */
+  
+  /* moving the H2 heading 15 pixels down (from TOP): */
+  h2 {
+    position: relative;
+    top: 15px;
+  }
+</style>
+<body>
+  <h1>On Being Well-Positioned</h1>
+  <h2>Move me!</h2>
+  <p>I still think the h2 is where it normally sits.</p>
+</body>
