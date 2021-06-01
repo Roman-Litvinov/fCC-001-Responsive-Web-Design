@@ -1,0 +1,14 @@
+<h1>Deep Thoughts with Master Camper Cat</h1>
+<article>
+  <h2>Defeating your Foe: the Red Dot is Ours!</h2>
+  <p>To Come...</p>
+</article>
+
+<!-- ALT attribute for the samuraiswords.jpeg image is empty 
+because the image is there just for decoration and thus doesn't need it -->
+<img src="samuraiSwords.jpeg" alt="">
+
+<article>
+  <h2>Is Chuck Norris a Cat Person?</h2>
+  <p>To Come...</p>
+</article>

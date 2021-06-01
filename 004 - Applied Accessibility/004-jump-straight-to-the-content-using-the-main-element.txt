@@ -1,0 +1,13 @@
+<!-- MAIN tag surrounds the main content of the page. Notes:
+  1 - There should be only one MAIN tag per page.
+  2 - It shouldn't include items that repeat across pages, like
+      navigation bars, etc.
+  3 - It allows assistive devices like screen readers to navigate
+      to main content quickly - so it's good for accessibility.
+-->
+<header>
+  <h1>Weapons of the Ninja</h1>
+</header>
+
+<main></main>
+<footer></footer>

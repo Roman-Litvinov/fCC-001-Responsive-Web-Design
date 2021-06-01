@@ -1,0 +1,41 @@
+<body>
+  <header>
+    <h1>Deep Thoughts with Master Camper Cat</h1>
+  </header>
+  <section>
+    <form>
+      <p>Sign up to receive Camper Cat's blog posts by email here!</p>
+
+<!-- LABEL tag is used to wrap around the text to associate it to a specific control item
+    within a form - such as an input field, a radio button, a submit button, etc. 
+    When associated, that form item gets selected when the text label is clicked, instead 
+    of itself specifically being clicked.
+    The form item can be placed within the LABEL tag to tie it to the label text, or the
+    FOR attribute of the LABEL tag can be tied to the form item using its ID attribute,
+    as seen below:
+-->
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="enter your email" required>
+      <input type="submit" name="submit" id="example" value="Submit">
+      <hr>
+      <!-- Just to demonstrate, the below label is tied to a submit button! -->
+      <label for="example">If you click this text, you'll click the Submit button above!!!</label>
+    </form>
+
+  </section>
+  <article>
+    <h2>The Garfield Files: Lasagna as Training Fuel?</h2>
+    <p>The internet is littered with varying opinions on nutritional paradigms, from catnip paleo to hairball cleanses. But let's turn our attention to an often overlooked fitness fuel, and examine the protein-carb-NOM trifecta that is lasagna...</p>
+  </article>
+  <img src="samuraiSwords.jpeg" alt="">
+  <article>
+    <h2>Defeating your Foe: the Red Dot is Ours!</h2>
+    <p>Felines the world over have been waging war on the most persistent of foes. This red nemesis combines both cunning stealth and lightning speed. But chin up, fellow fighters, our time for victory may soon be near...</p>
+  </article>
+  <img src="samuraiSwords.jpeg" alt="">
+  <article>
+    <h2>Is Chuck Norris a Cat Person?</h2>
+    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>
+  </article>
+  <footer>&copy; 2018 Camper Cat</footer>
+</body>
