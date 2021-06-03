@@ -7,11 +7,16 @@
       <h2>Mortal Kombat Tournament Survey</h2>
       <form>
         <p>Tell us the best date for the competition</p>
+
         <label for="pickdate">Preferred Date:</label>
 
-        <!-- Only change code below this line -->
-        <input type="date" id="pickdate" name="date">
-        <!-- Only change code above this line -->
+	<!-- date picker input field:
+	1 - required
+	2 - shows a date picker when clicked (in Firefox, at least)
+	3 - clicking on the label text "Preferred Date:" (see above) brings it focus
+	-->
+        <input type="date" id="pickdate" name="date" required>
+
 
         <input type="submit" name="submit" value="Submit">
       </form>

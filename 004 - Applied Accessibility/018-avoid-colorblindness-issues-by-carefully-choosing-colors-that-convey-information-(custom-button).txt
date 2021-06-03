@@ -1,0 +1,23 @@
+<head>
+  <style>
+    /*** HOW TO MAKE A BUTTON LOOK THE WAY YOU WANT, OMG ***/
+  button {
+    /* color of the text on the button */
+    color: #003366;
+    /* background color of the button */
+    background-color: #FFFF33;
+    /* font size of the text on the button */
+    font-size: 14px;
+    /* padding (space) between the text on the button and its edges */
+    padding: 10px;
+    /* give it some rounded corners */
+    border-radius: 15px;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Danger!</h1>
+  </header>
+  <button>Delete Internet</button>
+</body>
