@@ -1,0 +1,37 @@
+<style>
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Only change code below this line */
+  @media (max-height: 800px){
+    p {
+      /* decrease the font size if the screen gets shorter than 800px */
+      font-size:10px;
+    }
+  }
+  /* MY CODE - change the text color depending on the vertical size of the screen: */
+  @media (max-height: 500px) {
+    p {
+      /* red, if no more than 500px high */
+      color: red;
+    }
+  }
+  @media (min-height: 501px) {
+    p {
+      /* blue, if at least 501px high (so as soon as it gets bigger than 500px)
+          AND up to and including 700px high (because see the next rule) */
+      color: blue;
+    }
+  }
+  @media (min-height: 701px) {
+    p {
+      /* cyan, if at least 701px high */
+      color: cyan;
+    }
+  }
+  /* Only change code above this line */
+</style>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>

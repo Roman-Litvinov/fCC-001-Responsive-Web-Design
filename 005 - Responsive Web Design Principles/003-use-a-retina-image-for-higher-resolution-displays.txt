@@ -1,0 +1,27 @@
+<style>
+  /* set the width and height to half the original (200px) MANUALLY */
+  img.set {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* another way to do it - set transform property to scale both ways
+    to 0.5 of the original dimensions (NOTE - there should be NO SPACE between
+    the word "scale" and the left parenthesis, otherwise the property won't work!!!) */
+  img.scaled {
+      /* make sure the origin point of the scale transformation is set to 
+        upper-left corner, i.e. (0,0) coordinates, - otherwise it'll transform with 
+        the origin of the transformation in the center of the image: */
+      transform-origin: 0 0;
+      /* and then actually set the scale (can be in %s or decimal fraction): */
+      transform: scale(50%, 0.5);
+  }
+</style>
+<!-- image with dimensions set manually to specific values -->
+<img class="set" src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg" alt="freeCodeCamp sticker that says 'Because CamperBot Cares'">
+<br>
+<!-- image with dimensions scaled to 50% of whatever original size was -->
+<img class="scaled" src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg" alt="freeCodeCamp sticker that says 'Because CamperBot Cares'">
+<br>
+<!-- the unchanged original image -->
+<img src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg" alt="freeCodeCamp sticker that says 'Because CamperBot Cares'">

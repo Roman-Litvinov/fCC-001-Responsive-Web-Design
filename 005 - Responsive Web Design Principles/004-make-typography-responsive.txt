@@ -1,0 +1,16 @@
+<style>
+  h2 {
+    /* set the H2 width to 80% of the device viewport width */
+    width: 80vw;
+  }
+  p {
+    /* set the P width to 75% of the device viewport smaller dimension */
+    width: 75vmin;
+    /* NOTE - viewport units also work with font-size! 
+       Setting the font size to 3% of the viewport width */
+    font-size: 3vw;
+  }
+</style>
+
+<h2>Importantus Ipsum</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>

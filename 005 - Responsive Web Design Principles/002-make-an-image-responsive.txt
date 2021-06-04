@@ -1,0 +1,22 @@
+<style>
+/* make an image a RESPONSIVE image - changes its size depending  
+  on the size of its container element (never becoming wider than it is),
+  while keeping its aspect ratio */
+.responsive-img {
+    /* resize down to 100% of the width of the container to fit within it 
+      (also will not become wider than the default width set for all images
+      (600px, see below)) */
+    max-width: 100%;
+    /* keep the original aspect ratio */
+    height: auto;
+}
+img {
+  /* set the width of all images to static 600px by default */
+  width: 600px;
+}
+</style>
+
+<!-- size changes when the parent element size changes, because the image is responsive -->
+<img class="responsive-img" src="https://s3.amazonaws.com/freecodecamp/FCCStickerPack.jpg" alt="freeCodeCamp stickers set">
+<!-- size doesn't change when the parent element size changes -->
+<img src="https://s3.amazonaws.com/freecodecamp/FCCStickerPack.jpg" alt="freeCodeCamp stickers set">
