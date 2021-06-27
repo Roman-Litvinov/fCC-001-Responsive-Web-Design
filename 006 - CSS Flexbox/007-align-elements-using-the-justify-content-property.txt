@@ -1,0 +1,103 @@
+<style>
+  #box-container, .container {
+    background: gray;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+    display: flex;
+    height: 100px;
+    /* push all flex items to center of the main axis, with no space between them */
+    justify-content: center;
+  }
+  #box-1, .box-1 {
+    background-color: dodgerblue;
+    width: 15%;
+    height: 100%;
+  }
+  #box-2, .box-2 {
+    background-color: orangered;
+    width: 15%;
+    height: 100%;
+  }
+  #box-3, .box-3 {
+    background-color: yellow;
+    width: 15%;
+    height: 100%;
+  }
+  #box-4, .box-4 {
+    background-color: green;
+    width: 15%;
+    height: 100%;
+  }
+
+  #flex-start {
+    /* push all flex items to the start of the flex container */
+    justify-content: flex-start;
+  }
+  #flex-end {
+    /* push all flex items to the end of the flex container */
+    justify-content: flex-end;
+  }
+  #space-between {
+    /*- align flex items to the center of main axis, 
+      - push first and last flex items to the very start and very end of the flex container,
+      - distribute the extra space equally BETWEEN the items, with no space between the flex 
+        container edges and first and last items */
+    justify-content: space-between;
+  }
+  #space-around {
+    /*- align flex items to the center of main axis, 
+      - push first and last flex items to the start and end of the flex container,
+      - distribute the extra space between the items in such a way that every item
+        has equal margins on both sides (so that each item gets equal space AROUND it) */
+    justify-content: space-around;
+  }
+  #space-evenly {
+    /*- align flex items to the center of main axis, 
+      - push first and last flex items to the start and end of the flex container,
+      - distribute the extra space between the items and flex container edges in such
+        a way that all space blocks are EVEN*/
+    justify-content: space-evenly;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1">BOX 1<br> CENTER</div>
+  <div id="box-2">BOX 2</div>
+  <div id="box-3">BOX 3</div>
+  <div id="box-4">BOX 4</div>
+</div>
+<hr>
+<div class="container" id="flex-start">
+  <div class="box-1">BOX 1<br> FLEX-START<br> This is the default.</div>
+  <div class="box-2">BOX 2</div>
+  <div class="box-3">BOX 3</div>
+  <div class="box-4">BOX 4</div>
+</div>
+<hr>
+<div class="container" id="flex-end">
+  <div class="box-1">BOX 1<br> FLEX-END</div>
+  <div class="box-2">BOX 2</div>
+  <div class="box-3">BOX 3</div>
+  <div class="box-4">BOX 4</div>
+</div>
+<hr>
+<div class="container" id="space-between">
+  <div class="box-1">BOX 1<br> SPACE-BETWEEN</div>
+  <div class="box-2">BOX 2</div>
+  <div class="box-3">BOX 3</div>
+  <div class="box-4">BOX 4</div>
+</div>
+<hr>
+<div class="container" id="space-around">
+  <div class="box-1">BOX 1<br> SPACE-AROUND</div>
+  <div class="box-2">BOX 2</div>
+  <div class="box-3">BOX 3</div>
+  <div class="box-4">BOX 4</div>
+</div>
+<hr>
+<div class="container" id="space-evenly">
+  <div class="box-1">BOX 1<br> SPACE-EVENLY</div>
+  <div class="box-2">BOX 2</div>
+  <div class="box-3">BOX 3</div>
+  <div class="box-4">BOX 4</div>
+</div>

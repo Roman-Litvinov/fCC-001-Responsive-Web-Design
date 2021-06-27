@@ -1,0 +1,55 @@
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+/*  setting flex-wrap property to wrap - to make the elements wrap around
+    and continue on the next row (or column, if flex-direction is set to 
+    columns.
+    In this case, each DIV element's width is set to 25%, so after 4 elements
+    they start wrapping around onto the next row:
+*/
+    flex-wrap: wrap;
+    height: 100%;
+
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 50%;
+  }
+  #box-3 {
+    background-color: violet;
+    width: 25%;
+    height: 50%;
+  }
+  #box-4 {
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+  }
+  #box-5 {
+    background-color: green;
+    width: 25%;
+    height: 50%;
+  }
+  #box-6 {
+    background-color: black;
+    width: 25%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
+  <div id="box-4"></div>
+  <div id="box-5"></div>
+  <div id="box-6"></div>
+</div>

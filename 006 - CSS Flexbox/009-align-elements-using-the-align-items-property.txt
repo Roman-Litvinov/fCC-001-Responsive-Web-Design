@@ -1,0 +1,119 @@
+<!-- MEANING OF DIFFERENT SETTINGS OF ALIGN-ITEMS IS EXPLAINED IN THE ITEMS THEMSELVES! -->
+<style>
+  .container {
+    background: gray;
+    display: flex;
+    height: 160px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    margin-bottom: 5px;
+  }
+  #box-container {
+    align-items: center;
+  }
+  #flex-start {
+    align-items: flex-start;
+  }
+  #flex-end {
+    align-items: flex-end;
+  }
+  #stretch {
+    align-items: stretch;
+  }
+  #baseline {
+    align-items: baseline;
+  }
+
+  #box-1, .box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 20px;
+  }
+  #box-2, .box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 12px;
+  }
+  .box-3 {
+    background-color: green;
+    width: 200px;
+    font-size: 16px;
+  }
+  
+</style>
+
+<div class="container" id="box-container">
+  <div id="box-1">
+    <p>Hello</p>
+    <p>CENTER</p>
+  </div>
+  <div id="box-2">
+    <p>Goodbye</p>
+    <p>aligned to the center of flex container</p>
+  </div>
+  <div class="box-3">
+    <p>A 3rd box</p>
+    <p>Let's give this thing more items to align</p>
+  </div>
+</div>
+
+<div class="container" id="flex-start">
+  <div class="box-1">
+    <p>Hello</p>
+    <p>FLEX-START</p>
+  </div>
+  <div class="box-2">
+    <p>Goodbye</p>
+    <p>Items aligned to the start of flex container</p>
+  </div>
+  <div class="box-3">
+    <p>A 3rd box</p>
+    <p>Let's give this thing more items to align</p>
+  </div>
+</div>
+
+<div class="container" id="flex-end">
+  <div class="box-1">
+    <p>Hello</p>
+    <p>FLEX-END</p>
+  </div>
+  <div class="box-2">
+    <p>Goodbye</p>
+    <p>Items aligned to the end of flex container</p>
+  </div>
+  <div class="box-3">
+    <p>A 3rd box</p>
+    <p>Let's give this thing more items to align</p>
+  </div>
+</div>
+
+<div class="container" id="stretch">
+  <div class="box-1">
+    <p>Hello</p>
+    <p>STRETCH</p>
+  </div>
+  <div class="box-2">
+    <p>Goodbye</p>
+    <p>Items stretched to fill flex container</p>
+  </div>
+  <div class="box-3">
+    <p>A 3rd box</p>
+    <p>Let's give this thing more items to align</p>
+  </div>
+</div>
+
+<div class="container" id="baseline">
+  <div class="box-1">
+    <p>Hello</p>
+    <p>BASELINE</p>
+  </div>
+  <div class="box-2">
+    <p>Goodbye</p>
+    <p>Baselines (of 1st lines?) of items are aligned </p>
+    <p>And here's some more text!</p>
+  </div>
+  <div class="box-3">
+    <p>A 3rd box</p>
+    <p>Let's give this thing more items to align</p>
+  </div>
+</div>

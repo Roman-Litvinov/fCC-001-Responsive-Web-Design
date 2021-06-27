@@ -1,0 +1,36 @@
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    /* make the item shrink twice as much as the other items*/
+    flex-shrink: 2;
+  }
+
+  #box-3 {
+    background-color: green;
+    width: 100%;
+    height: 200px;
+    /* This item SHOULD probably shrink 3 times as much as the other items,
+       but instead it just disappears? What's going on here... */
+    flex-shrink: 3;
+  }
+  
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
+</div>

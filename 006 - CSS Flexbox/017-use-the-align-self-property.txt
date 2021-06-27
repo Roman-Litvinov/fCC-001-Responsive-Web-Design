@@ -1,0 +1,32 @@
+<style>
+  #box-container {
+    display: flex;
+    background-color: gray;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    /* ALIGN-SELF allows to set vertical alignment of individual element,
+      instead of using ALIGN-ITEMS on its flex container. Values that are
+      accepted are: CENTER, FLEX-START, and FLEX-END.
+      Center this element vertically in the flex container:
+    */
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    /* Put this element at the end of the flex container:
+    */
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1">box-1</div>
+  <div id="box-2">box-2</div>
+</div>

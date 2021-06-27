@@ -1,0 +1,25 @@
+<style>
+  #box-container {
+    height: 500px;
+    display: flex;
+  }
+
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+<!-- "box-container" DIV element had a display CSS property set to "flex",
+  which made the 2 children DIV elements be put in 1 single line, instead
+  of "box-2" being put after "box-1" on the page -->
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
