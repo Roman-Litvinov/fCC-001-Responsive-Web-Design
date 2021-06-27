@@ -1,0 +1,56 @@
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Only change code below this line */
+    
+    /* AUTO-FILL option for REPEAT function automatically inserts as 
+    many rows/columns of specified size as the size of the container allows.
+
+    BELOW: auto-fill available space with columns of minimum width of 60px and maximum 
+    width of 1fr. As container size increases by extra 60px, a new column is inserted.Then
+    columns get wider until the container size increases enough to add another 60px-wide
+    column, and so on. Once all grid elements are on the same row, they get moved to the
+    start of the row, as new empty columns are added to FILL the space:
+    */ 
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+
+    /* Only change code above this line */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .container2 {
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    background: Silver;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(60px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
+<div class="container2">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>

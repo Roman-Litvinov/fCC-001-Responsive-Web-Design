@@ -1,0 +1,39 @@
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+
+  .item5 {
+    background: PaleGreen;
+    /* Only change code below this line */
+    /* GRID-AREA can be used to define an area to place the item in on the fly, instead of setting up named
+    areas by using GRID-TEMPLATE-AREAS. GRID-AREA takes 4 parameters with slashes (/) between them, like so:
+    
+    GRID-AREA: starting horizontal line/starting vertical line/ending horizontal line/ending vertical line;
+
+    Place the element of ITEM5 class into the area between H lines 3 and 4 and V lines 1 and 4:
+    */
+    grid-area:3/1/4/4;
+    /* Only change code above this line */
+  }
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
