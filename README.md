@@ -10,7 +10,19 @@ The following courses have been completed:
 * 003 - Applied Visual Design
 * 004 - Applied Accessibility
 * 005 - Responsive Web Design Principles
+* 006 - CSS Flexbox
+* 007 - CSS Grid
 
-Currently working on (about to start):
-### 006 - CSS Flexbox
+
+The following is left (needs to be done to actually get the FCC certificate):
+
+### Responsive Web Design Projects
+* Build a Tribute Page
+* Build a Survey Form
+* Build a Product Landing Page
+* Build a Technical Documentation Page
+* Build a Personal Portfolio page
+
+
+Will take care of it as I go along - continuing to JavaScript Algorithms & Data Structures Certification now...
 
